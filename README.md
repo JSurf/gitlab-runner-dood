@@ -1,7 +1,7 @@
 # gitlab-runner-dood
 Docker-on-Docker gitlab runner.
 
-Useful to execute docker images from gitlab ci whitout using the docker-in-docker approach
+Useful to create docker images from gitlab ci whitout using the docker-in-docker approach
 
 Inspired by "Do not use docker in docker for ci":
 https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
