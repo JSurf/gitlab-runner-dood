@@ -11,10 +11,15 @@ https://hub.docker.com/r/gitlab/gitlab-runner/
 
 Usage:
 ```
-   docker run -d  -v /var/run/docker.sock:/var/run/docker.sock jsurf/gitlab-runner-dood
+   docker run -d --name gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock jsurf/gitlab-runner-dood
 ```
 
 Configuration:
+```
+   docker exec -it gitlab-runner gitlab-runner register
+```
+
+Use "shell" as execution method, because we have docker tooling directly installed in the container
 
 Example :gitlab-ci.yml configuration:
 ```
