@@ -21,7 +21,7 @@ Configuration:
 
 Use "shell" as execution method, because we have docker tooling directly installed in the container
 
-Example :gitlab-ci.yml configuration:
+Example .gitlab-ci.yml configuration:
 ```
    before_script:
       - docker info
