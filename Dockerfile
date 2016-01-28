@@ -2,7 +2,7 @@ FROM gitlab/gitlab-runner
 #
 # Give sudo privileges to jenkins
 #
-RUN echo "jenkins ALL=NOPASSWD: /bin/docker.io" >> /etc/sudoers
+RUN echo "gitlab-runner ALL=NOPASSWD: /bin/docker.io" >> /etc/sudoers
 
 #
 # The sudo workaround
